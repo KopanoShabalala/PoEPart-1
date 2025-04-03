@@ -5,6 +5,7 @@ using System.Threading;
 class Program
 {
     static void Main()
+
     {
         // 1. Play Voice Greeting
         PlayVoiceGreeting();
@@ -27,7 +28,7 @@ class Program
             userName = Console.ReadLine();
         }
 
-        Console.ForegroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine($"\nWelcome, {userName}! I'm your Cybersecurity Awareness Bot.");
         Console.ResetColor();
 
