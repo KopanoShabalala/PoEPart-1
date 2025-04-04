@@ -120,7 +120,7 @@ class Program
                     break;
 
                 case "how do i browse safely?":
-                    Console.WriteLine("Use HTTPS sites, avoid suspicious links, and enable 2FA on accounts.");
+                    Console.WriteLine("Use HTTPS sites, avoid suspicious links, and enable two factor authentication on accounts.");
                     break;
 
                 default:
