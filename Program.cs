@@ -44,7 +44,7 @@ class Program
         try
         {
             // Ensure "greeting.wav" exists in the project folder
-            SoundPlayer player = new SoundPlayer("greeting.wav");
+            SoundPlayer player = new SoundPlayer("");
             player.Play();
         }
         catch (Exception)
