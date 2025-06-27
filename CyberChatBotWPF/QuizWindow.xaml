@@ -1,0 +1,58 @@
+﻿<Window x:Class="CyberChatBotWPF.QuizWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cybersecurity Quiz" Height="500" Width="700" Background="#FF1C1C1C" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Quiz Title -->
+        <TextBlock Text="🛡️ Cybersecurity Quiz"
+                   FontSize="24" FontWeight="Bold"
+                   Foreground="LightGreen"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+        <!-- Question -->
+        <TextBlock x:Name="QuestionText"
+                   Grid.Row="1"
+                   Text="Question appears here"
+                   FontSize="18"
+                   TextWrapping="Wrap"
+                   Foreground="White"
+                   Margin="0,0,0,10"/>
+
+        <!-- Options -->
+        <ItemsControl x:Name="OptionButtons"
+                      Grid.Row="2"
+                      Margin="0,0,0,10">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+
+        <!-- Feedback -->
+        <TextBlock x:Name="FeedbackText"
+                   Grid.Row="3"
+                   FontSize="16"
+                   TextWrapping="Wrap"
+                   Foreground="White"
+                   Margin="0,10,0,10"/>
+
+        <!-- Next Button -->
+        <Button Grid.Row="4"
+                Content="Next"
+                Width="100"
+                Height="30"
+                HorizontalAlignment="Right"
+                Click="NextQuestion_Click"
+                Margin="0,10,0,0"/>
+    </Grid>
+</Window>
