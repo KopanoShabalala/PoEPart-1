@@ -1,1 +1,27 @@
+# 🛡️ Cybersecurity Awareness Chatbot – Part 2
+
+A console-based chatbot built in C# that helps users learn about cybersecurity concepts through interactive conversation. Created as part of the PoE Part 1 project.
+
+##  Features
+
+- 🎙 Voice greeting with `greeting.wav`
+-  ASCII art logo on launch
+-  Keyword-based response system (e.g., phishing, passwords, 2FA)
+-  Sentiment detection (detects emotions like happy, sad, confused, etc.)
+-  Memory: remembers the last discussed topic
+-  Randomized responses for friendly, human-like interaction
+-  Error handling for smooth user experience
+
+##  Tech Stack
+
+- Language: **C# (.NET)**
+- Platform: **Console Application**
+- Audio: **System.Media.SoundPlayer**
+
+##  How to Run
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/KopanoShabalala/PoEPart-2.git
+   cd PoEPart-2
 
