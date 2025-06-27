@@ -1,27 +1,42 @@
-# 🛡️ Cybersecurity Awareness Chatbot – Part 2
+🛡️ CyberSecurity Chatbot — SecureBot (PoE Project)
+Welcome to SecureBot, a cybersecurity awareness chatbot developed as part of my Project of Evidence (PoE) for Programming.
 
-A console-based chatbot built in C# that helps users learn about cybersecurity concepts through interactive conversation. Created as part of the PoE Part 1 project.
+This solution consists of three evolving parts:
 
-##  Features
+Part 1: Basic console chatbot with voice greeting and ASCII art
 
-- 🎙 Voice greeting with `greeting.wav`
--  ASCII art logo on launch
--  Keyword-based response system (e.g., phishing, passwords, 2FA)
--  Sentiment detection (detects emotions like happy, sad, confused, etc.)
--  Memory: remembers the last discussed topic
--  Randomized responses for friendly, human-like interaction
--  Error handling for smooth user experience
+Part 2: Enhanced console chatbot with sentiment detection, keyword recognition, and more dynamic responses
 
-##  Tech Stack
+Part 3: Fully-featured WPF GUI application with tasks, reminders, NLP keyword detection, quizzes, theme switching, and an activity log.
+Feature                             | Part 1 | Part 2 | Part 3 (WPF GUI) |
+  |
+Voice greeting                      | ✅      | ✅      | ✅                
+ASCII art and animated intro        | ✅      | ✅      | ✅                
+User input validation               | ✅      | ✅      | ✅                
+Cybersecurity keyword responses     | ✅      | ✅      | ✅                
+Sentiment/emotion detection         | ❌      | ✅      | ✅                
+Task creation and management        | ❌      | ❌      | ✅                
+Reminder system                     | ❌      | ❌      | ✅                
+Quiz with feedback                  | ❌      | ❌      | ✅                
+Theme switching (light/dark)        | ❌      | ❌      | ✅                
+Activity log (chat history/actions) | ❌      | ❌      | ✅                
+Chat memory recall (last topic)     | ❌      | ✅      | ✅                
+CyberChatBot/
+ Part1.cs                 Console App - Basic Bot
+ Part2.cs                 Console App - Advanced Bot 
+ CyberChatBotWPF/         WPF GUI app (Main project folder) 
+- MainWindow.xaml         UI Layout
+- MainWindow.xaml.cs      Core chatbot logic
+- CyberTask.cs            Task data class
+- QuizWindow.xaml/.cs     Quiz interface and logic
+- greeting.wav            Audio file
+- Resources, Assets, etc.
+- README.md                  This file
 
-- Language: **C# (.NET)**
-- Platform: **Console Application**
-- Audio: **System.Media.SoundPlayer**
+Technologies used
+C# (.NET Core & WPF)
+Regex for NLP/keyword detection
+DispatcherTimer for reminders
+LINQ & Collections for task/activity management
 
-##  How to Run
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/KopanoShabalala/PoEPart-2.git
-   cd PoEPart-2
 
