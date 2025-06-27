@@ -39,4 +39,10 @@ Regex for NLP/keyword detection
 DispatcherTimer for reminders
 LINQ & Collections for task/activity management
 
+How to Run
+Console App
+1. Open in Visual Studio run Part1.cs or Part2.cs
+WPF GUI App
+1. Open CyberChatBotWPF in Visual Studio.
+2. Build and run. Chat,add tasks, take a quiz or change themes.
 
